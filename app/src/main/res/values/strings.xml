@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PDFBoard</string>
+    <string name="title_activity_main_tabbed">PDF Board</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--Preferences Image Quality-->
+    <string-array name="listArrayImage">
+        <item>High (100%)</item>
+        <item>Normal (80%)</item>
+        <item>Low (60%)</item>
+    </string-array>
+
+    <string-array name="listValuesImage">
+        <item>100</item>
+        <item>80</item>
+        <item>60</item>
+    </string-array>
+    <!--Ends here-->
+
+    <string name="pref_folder_summary">Let empty to use the default directory (\"/Android/data/com.syberkeep.pdfboard/\"). Enter the path
+        to your desired folder on your sdcard. The path must begin and end with \"/\" like \"/Download/PDF/\".
+        If the desired directory does not exist, it will be generated automatically.</string>
+
+    <string name="action_openSettings_summary">Open via the system settings the app info of the app. There you can,
+        depending on your Android version, manage several things (Storage, network traffic, permissions, …).</string>
+
+    <string name="about_settings_text">Changelog, help, license, used libraries and more.</string>
+
+    <string name="app_hint" tools:ignore="TypographyEllipsis">Whatever you want ...</string>
+
+</resources>

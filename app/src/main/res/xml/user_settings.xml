@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="SETTINGS">
+
+        <ListPreference
+            android:title="Image Quality"
+            android:icon="@drawable/ic_file_image"
+            android:summary="Set the image quality. Higher quality results in (much) bigger PDF sizes."
+            android:key="imageQuality"
+            android:defaultValue="80"
+            android:entries="@array/listArrayImage"
+            android:entryValues="@array/listValuesImage" />
+
+        <CheckBoxPreference
+            android:title="Backup"
+            android:icon="@drawable/ic_backup_restore"
+            android:summary="Do you want to backup PDF files before manipulating, e.g. deleting or adding pages?"
+            android:key="backup"
+            android:defaultValue="true" />
+
+        <Preference
+            android:title="Custom Directory"
+            android:icon="@drawable/ic_folder"
+            android:summary="@string/pref_folder_summary"
+            android:key="folder" />
+
+        <Preference
+            android:title="App Info"
+            android:icon="@drawable/ic_settings"
+            android:summary="@string/action_openSettings_summary"
+            android:key="settings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ABOUT THE APP">
+
+        <Preference
+            android:title="... and other things"
+            android:icon="@drawable/ic_info"
+            android:summary="@string/about_settings_text"
+            android:key="license" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

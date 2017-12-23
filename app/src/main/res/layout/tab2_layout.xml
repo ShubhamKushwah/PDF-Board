@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    tools:context=".MainTabbedActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_pdf_text"
+        android:hint="Enter the content"
+        android:gravity="start"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        android:textSize="20sp"
+        android:textColor="@color/dark_grey_30"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/fab_done"
+        android:layout_margin="@dimen/fab_margin"
+        android:inputType="textMultiLine|textAutoCorrect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_minus"
+        app:fabSize="mini"
+        app:backgroundTint="@color/dark_grey_30"
+        app:srcCompat="@drawable/ic_minus"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        tools:ignore="ContentDescription"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_plus"
+        app:fabSize="mini"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@color/dark_grey_30"
+        app:srcCompat="@drawable/ic_plus"
+        android:clickable="true"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/fab_minus"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/font_size_text"
+        android:hint="20"
+        android:inputType="numberSigned"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:maxLength="2"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_toEndOf="@id/fab_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_dir"
+        app:fabSize="mini"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@color/dark_grey_30"
+        app:srcCompat="@drawable/ic_dir"
+        android:clickable="true"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/font_size_text"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_done"
+        app:fabSize="normal"
+        android:src="@drawable/ic_check"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="RelativeOverlap" />
+
+</RelativeLayout>
